@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Image Upload</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="block" (click)="takePhoto()">Take Photo</ion-button>
+  <ion-button expand="block" (click)="pickImage()"
+    >Pick from Gallery</ion-button
+  >
+
+  @if (photoDataUrl) {
+  <div class="preview">
+    <img [src]="photoDataUrl" alt="Preview" />
+    <ion-button color="success" expand="block" (click)="upload()"
+      >Upload</ion-button
+    >
+  </div>
+  }
+</ion-content>

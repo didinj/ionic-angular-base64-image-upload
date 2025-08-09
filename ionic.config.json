@@ -1,8 +1,7 @@
 {
-  "name": "ionic-image-upload",
-  "app_id": "",
-  "type": "ionic-angular",
+  "name": "imageUploadApp",
   "integrations": {
-    "cordova": {}
-  }
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
 }
